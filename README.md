@@ -18,7 +18,7 @@ This project focuses on the analysis and comparison of weather data collected fr
    - In a subsequent phase (`extreme_weather_analysis.py`), the project detects extreme weather events such as hot spells (periods with abnormally high temperatures) and cold spells (periods with abnormally low temperatures) for stations in the US, Canada, and Mexico. The script aggregates the data, identifies these events, and groups them by country, providing insights into extreme weather patterns in North America.
   
 
-5. **Climate Analysis: **
+5. **Climate Analysis:**
    - (`weatherforecast.py`) code performs a comprehensive analysis of climate data from a CSV file. It loads the weather data, extracts country and state information from the `station_id`, and filters records for the US, Canada, and Mexico. The code derives year and month from the date, allowing for temperature and precipitation analysis. It aggregates average, minimum, and maximum temperatures, as well as total precipitation for each month by country and state. Additionally, it identifies long-term trends in temperature and precipitation, ultimately displaying the results for various analyses.
 
 6. **Heavy Rainfall and Drought Periods**
