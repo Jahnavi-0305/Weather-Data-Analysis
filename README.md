@@ -16,6 +16,16 @@ This project focuses on the analysis and comparison of weather data collected fr
 
 4. **Extreme Weather Detection:**
    - In a subsequent phase (`extreme_weather_analysis.py`), the project detects extreme weather events such as hot spells (periods with abnormally high temperatures) and cold spells (periods with abnormally low temperatures) for stations in the US, Canada, and Mexico. The script aggregates the data, identifies these events, and groups them by country, providing insights into extreme weather patterns in North America.
+  
+
+5. **Climate Analysis: **
+   - (`weatherforecast.py`) code performs a comprehensive analysis of climate data from a CSV file. It loads the weather data, extracts country and state information from the `station_id`, and filters records for the US, Canada, and Mexico. The code derives year and month from the date, allowing for temperature and precipitation analysis. It aggregates average, minimum, and maximum temperatures, as well as total precipitation for each month by country and state. Additionally, it identifies long-term trends in temperature and precipitation, ultimately displaying the results for various analyses.
+
+6. **Heavy Rainfall and Drought Periods**
+   - (`prepanalysis.py`) code analyzes precipitation data to identify periods of heavy rainfall and drought. It loads data focused on the `PRCP` element and calculates the average precipitation. Thresholds are set to define heavy rainfall as twice the average and drought as half the average. The code filters the data to highlight periods exceeding these thresholds and prints the identified heavy rainfall and drought periods, providing valuable insights into extreme weather conditions.
+
+7. **Weather Data Imputation and Outlier Handling**
+   - (`climatechange.py`) code addresses missing values and outliers in weather data using PySpark. It pivots the dataset to create separate columns for different weather elements and calculates the mean and standard deviation for TMAX and TMIN . Missing TAVG values are imputed based on the average of TMAX and TMIN, while missing PRCP values are filled using a rolling average of the previous three days. The code also detects outliers in TMAX and TMIN based on a three-standard-deviation rule and saves the cleaned data to a new CSV file, ensuring improved data quality for further analysis.
 
 #### **Technologies Used:**
 - **Apache Spark**: Used for distributed data processing, ensuring efficient handling of large weather datasets.
